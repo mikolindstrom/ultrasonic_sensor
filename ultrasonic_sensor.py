@@ -8,7 +8,7 @@ logger = logging.getLogger("kalliope")
 
 class UltrasonicSensor(NeuronModule):
     def __init__(self, **kwargs):
-        super(UltrasonicSensor, self).__init__(**kwargs)
+        super().__init__(**kwargs)
         
         self.trigger_pin = kwargs.get('trigger_pin', None)
         self.echo_pin = kwargs.get('echo_pin', None)
