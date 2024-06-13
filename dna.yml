@@ -1,11 +1,8 @@
 ---
   name: "ultrasonic_sensor"
   type: "neuron"
-  version: "0.1"
   author: "lindstrom"
-  description: "A neuron to measure distance using an ultrasonic sensor."
-  long_description: "This neuron interfaces with an ultrasonic sensor to measure distance and report it."
-
+  
   kalliope_supported_version:
      - 0.7
   tags:
@@ -13,14 +10,4 @@
     - "sensor"
     - "distance"
     - "ultrasonic"
-
-  neurons:
-    - name: "ultrasonic_sensor"
-      class_path: "neurons.ultrasonic_sensor.ultrasonic_sensor.UltrasonicSensor"
-      parameters:
-        - name: "trigger_pin"
-          required: true
-          description: "The GPIO pin connected to the trigger of the ultrasonic sensor."
-        - name: "echo_pin"
-          required: true
-          description: "The GPIO pin connected to the echo of the ultrasonic sensor."
+    - "GPIO"
