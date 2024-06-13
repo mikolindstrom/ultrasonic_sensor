@@ -1,12 +1,12 @@
 ---
-   name: "ultrasonic_sensor"
-   type: "neuron"
-   version: "0.1"
-   author: "Your Name"
-   description: "A neuron to measure distance using an ultrasonic sensor."
-   long_description: "This neuron interfaces with an ultrasonic sensor to measure distance and report it."
+  name: "ultrasonic_sensor"
+  type: "neuron"
+  version: "0.1"
+  author: "Your Name"
+  description: "A neuron to measure distance using an ultrasonic sensor."
+  long_description: "This neuron interfaces with an ultrasonic sensor to measure distance and report it."
 
-   kalliope_supported_version:
+  kalliope_supported_version:
      - 0.7
   tags:
     - "sensor"
