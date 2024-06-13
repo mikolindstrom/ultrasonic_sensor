@@ -1,7 +1,7 @@
 import logging
 import RPi.GPIO as GPIO
 import time
-from kalliope.core.NeuronModule import NeuronModule, InvalidParameterException
+from kalliope.core.NeuronModule import NeuronModule, MissingParameterException, InvalidParameterException
 
 logging.basicConfig()
 logger = logging.getLogger("kalliope")
