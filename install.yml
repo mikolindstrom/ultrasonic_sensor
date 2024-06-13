@@ -7,6 +7,6 @@
 
   tasks:
     - name: "Install pip dependencies"
-      pip3:
+      pip:
         name: RPi.GPIO
         version: 0.7.0 
