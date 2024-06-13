@@ -1,7 +1,7 @@
 synapses:
-  - name: "measure_distance"
+  - name: "measure-distance"
     signals:
-      - order: "measure distance"
+      - order: "distance"
     neurons:
       - ultrasonic_sensor:
           trigger_pin: 23
