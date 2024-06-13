@@ -6,7 +6,7 @@ from kalliope.core.NeuronModule import NeuronModule, MissingParameterException, 
 logging.basicConfig()
 logger = logging.getLogger("kalliope")
 
-class UltrasonicSensor(NeuronModule):
+class Ultrasonic_sensor(NeuronModule):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         
