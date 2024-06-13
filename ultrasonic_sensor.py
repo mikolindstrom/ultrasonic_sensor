@@ -1,5 +1,6 @@
 import logging
 import RPi.GPIO as GPIO
+GPIO.setwarnings(False)
 import time
 from kalliope.core.NeuronModule import NeuronModule, MissingParameterException, InvalidParameterException
 
@@ -21,8 +22,9 @@ class Ultrasonic_sensor(NeuronModule):
         GPIO.setup(self.echo_pin, GPIO.IN)
 
         distance = self.get_distance()
-        self.say(distance)
+        self.announce(distance)
         self.cleanup()
+        GPIO.cleanup()
 
     def get_distance(self):
         # Set trigger to HIGH
@@ -53,7 +55,7 @@ class Ultrasonic_sensor(NeuronModule):
     def cleanup(self):
         GPIO.cleanup()
 
-    def say(self, distance):
-        message = f"Distance: {distance:.1f} cm"
+    def announce(self, distance):
+        message = f"The Distance is : {distance:.1f} cm"
         self.say(message)
         logger.info(message)
